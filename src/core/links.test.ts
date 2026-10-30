@@ -9,6 +9,10 @@ describe('decodeEntities', () => {
   it('leaves unknown or invalid entities untouched', () => {
     expect(decodeEntities('&bogus; &#0; &#x110000;')).toBe('&bogus; &#0; &#x110000;')
   })
+
+  it('does not resolve names from the object prototype', () => {
+    expect(decodeEntities('&constructor; &toString;')).toBe('&constructor; &toString;')
+  })
 })
 
 describe('extractLinks', () => {

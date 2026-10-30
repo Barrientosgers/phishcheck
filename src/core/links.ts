@@ -1,13 +1,14 @@
 import type { ParsedLink } from './types'
 
-const NAMED_ENTITIES: Record<string, string> = {
-  amp: '&',
-  lt: '<',
-  gt: '>',
-  quot: '"',
-  apos: "'",
-  nbsp: ' ',
-}
+// A Map, not an object: `{}['constructor']` would return a function for `&constructor;`.
+const NAMED_ENTITIES = new Map([
+  ['amp', '&'],
+  ['lt', '<'],
+  ['gt', '>'],
+  ['quot', '"'],
+  ['apos', "'"],
+  ['nbsp', ' '],
+])
 
 /** Decodes the HTML entities that matter for URLs and link text. Unknown ones are left as-is. */
 export function decodeEntities(input: string): string {
@@ -17,7 +18,7 @@ export function decodeEntities(input: string): string {
       const code = isHex ? parseInt(entity.slice(2), 16) : parseInt(entity.slice(1), 10)
       return code > 0 && code <= 0x10ffff ? String.fromCodePoint(code) : match
     }
-    return NAMED_ENTITIES[entity.toLowerCase()] ?? match
+    return NAMED_ENTITIES.get(entity.toLowerCase()) ?? match
   })
 }
 
