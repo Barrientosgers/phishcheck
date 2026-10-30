@@ -1,0 +1,31 @@
+Return-Path: <statements@northwind.example.com>
+Authentication-Results: mx.example.com;
+ spf=pass smtp.mailfrom=northwind.example.com;
+ dkim=pass header.d=northwind.example.com;
+ dmarc=pass header.from=northwind.example.com
+From: "Northwind Bank" <statements@northwind.example.com>
+To: Maria Lopez <customer@example.com>
+Subject: Your September statement is ready
+Date: Thu, 01 Oct 2026 08:00:00 +0000
+Message-ID: <stmt-0001@northwind.example.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="nw-ok"
+
+--nw-ok
+Content-Type: text/plain; charset="utf-8"
+
+Hello Maria,
+
+Your September statement is available. View it at
+https://www.northwind.example.com/statements.
+
+Thank you for banking with Northwind.
+--nw-ok
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Hello Maria,</p>
+<p>Your September statement is available.</p>
+<p><a href="https://www.northwind.example.com/statements">View your statement</a></p>
+</body></html>
+--nw-ok--
