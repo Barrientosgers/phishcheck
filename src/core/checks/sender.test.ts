@@ -150,6 +150,24 @@ describe('checkSender: individual flags', () => {
     expect(checkSender(email)).toEqual([])
   })
 
+  it('accepts a Reply-To on a sibling subdomain, and handles multi-part endings', () => {
+    const siblings = makeEmail({
+      headers: passing,
+      from: 'a@mail.bank.co.uk',
+      replyTo: ['b@help.bank.co.uk'],
+    })
+    expect(checkSender(siblings)).toEqual([])
+  })
+
+  it('treats different owners on a shared host as a mismatch', () => {
+    const email = makeEmail({
+      headers: passing,
+      from: 'a@alice.github.io',
+      replyTo: ['b@bob.github.io'],
+    })
+    expect(ids(checkSender(email))).toEqual(['reply-to-mismatch'])
+  })
+
   it('flags a different Return-Path unless DMARC passed', () => {
     const base = { from: 'a@example.com', returnPath: 'bounce@mailer.example.net' }
     const failing = checkSender(

@@ -17,7 +17,8 @@
   "dependencies": {
     "postal-mime": "^4.2.0",
     "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "react-dom": "^19.3.1",
+    "tldts": "^7.4.19"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

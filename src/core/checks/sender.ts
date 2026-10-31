@@ -1,3 +1,4 @@
+import { isSameOrganization } from '../domains'
 import type { Flag } from '../flags'
 import { getHeader } from '../parser'
 import type { ParsedEmail } from '../types'
@@ -60,15 +61,6 @@ export function getAuthResults(email: ParsedEmail): AuthResults {
   }
 
   return results
-}
-
-/**
- * True when `a` and `b` are the same domain or one is a subdomain of the other.
- * Phase 3 replaces this with a registrable-domain comparison (tldts), which also treats
- * sibling subdomains like `mail.example.com` and `help.example.com` as the same organisation.
- */
-function relatedDomains(a: string, b: string): boolean {
-  return a === b || a.endsWith(`.${b}`) || b.endsWith(`.${a}`)
 }
 
 /** Sender authentication and identity-mismatch checks. */
@@ -147,7 +139,7 @@ export function checkSender(email: ParsedEmail): Flag[] {
   if (fromDomain) {
     const replyDomain = email.replyTo
       .map((a) => a.domain)
-      .find((d) => d && !relatedDomains(d, fromDomain))
+      .find((d) => d && !isSameOrganization(d, fromDomain))
     if (replyDomain) {
       flags.push({
         id: 'reply-to-mismatch',
@@ -164,7 +156,7 @@ export function checkSender(email: ParsedEmail): Flag[] {
     // Legitimate bulk senders often use their own bounce domain. If DMARC passed, the sender
     // domain was verified anyway, so a different Return-Path is not suspicious.
     const returnDomain = email.returnPath?.domain
-    if (returnDomain && auth.dmarc !== 'pass' && !relatedDomains(returnDomain, fromDomain)) {
+    if (returnDomain && auth.dmarc !== 'pass' && !isSameOrganization(returnDomain, fromDomain)) {
       flags.push({
         id: 'return-path-mismatch',
         category: 'sender',
