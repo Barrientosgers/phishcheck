@@ -3,22 +3,12 @@ import { checkContent } from './checks/content'
 import { checkDomain } from './checks/domain'
 import { checkLinks } from './checks/links'
 import { checkSender, getAuthResults, type AuthResults } from './checks/sender'
-import type { Flag, Localized } from './flags'
+import type { Flag } from './flags'
 import { parseEmail } from './parser'
 import type { ParsedEmail } from './types'
+import { MAX_SCORE, verdictFor, type Verdict } from './verdict'
 
-export type Verdict = 'safe' | 'suspicious' | 'phishing'
-
-export const MAX_SCORE = 100
-
-/** Lowest score of each verdict. Starting guesses, to be tuned with the accuracy script. */
-export const VERDICT_THRESHOLDS = { suspicious: 25, phishing: 60 } as const
-
-export const VERDICT_LABELS: Record<Verdict, Localized> = {
-  safe: { en: 'Likely safe', es: 'Probablemente seguro' },
-  suspicious: { en: 'Suspicious', es: 'Sospechoso' },
-  phishing: { en: 'Likely phishing', es: 'Probable phishing' },
-}
+export { MAX_SCORE, VERDICT_LABELS, VERDICT_THRESHOLDS, verdictFor, type Verdict } from './verdict'
 
 export interface AnalysisReport {
   /** 0-100: the sum of all flags' points, capped. */
@@ -31,12 +21,6 @@ export interface AnalysisReport {
   /** SPF, DKIM and DMARC as recorded by the receiving server, for the sender table. */
   auth: AuthResults
   email: ParsedEmail
-}
-
-export function verdictFor(score: number): Verdict {
-  if (score >= VERDICT_THRESHOLDS.phishing) return 'phishing'
-  if (score >= VERDICT_THRESHOLDS.suspicious) return 'suspicious'
-  return 'safe'
 }
 
 /** Runs every check on an already-parsed email and scores the result. Pure and synchronous. */

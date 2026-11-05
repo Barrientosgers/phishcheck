@@ -1,4 +1,5 @@
-import { MAX_SCORE, VERDICT_LABELS, type AnalysisReport } from '../../core/analyze'
+import type { AnalysisReport } from '../../core/analyze'
+import { MAX_SCORE, VERDICT_LABELS } from '../../core/verdict'
 import type { Language } from '../../core/flags'
 import { translator } from '../strings'
 

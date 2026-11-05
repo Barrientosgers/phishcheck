@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { analyzeEmail, type AnalysisReport } from '../core/analyze'
+import type { AnalysisReport } from '../core/analyze'
 import type { Language } from '../core/flags'
 import { EmailInput } from './components/EmailInput'
 import { FlagList } from './components/FlagList'
@@ -10,6 +10,11 @@ import { ScoreCard } from './components/ScoreCard'
 import { SenderTable } from './components/SenderTable'
 import { translator } from './strings'
 import './App.css'
+
+// Code splitting: the engine (parser, domain list, checks) is most of the JavaScript, so it
+// lives in its own file. Starting the import here, outside the component, means it downloads
+// in the background while the page is already showing, instead of blocking the first paint.
+const engine = import('../core/analyze')
 
 function App() {
   const [lang, setLang] = useState<Language>('en')
@@ -27,6 +32,7 @@ function App() {
     setBusy(true)
     setError(false)
     try {
+      const { analyzeEmail } = await engine
       const result = await analyzeEmail(source)
       if (run === latestRun.current) setReport(result)
     } catch {
