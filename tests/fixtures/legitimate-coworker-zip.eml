@@ -1,0 +1,30 @@
+Return-Path: <taylor@example.com>
+Authentication-Results: mx.example.com;
+ spf=pass smtp.mailfrom=example.com;
+ dkim=pass header.d=example.com;
+ dmarc=pass header.from=example.com
+From: Taylor Green <taylor@example.com>
+To: Sam Rivera <sam@example.com>
+Subject: Photos from the team offsite
+Date: Fri, 16 Oct 2026 15:20:00 +0000
+Message-ID: <offsite-photos@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="zip-ok"
+
+--zip-ok
+Content-Type: text/plain; charset="utf-8"
+
+Hey Sam,
+
+As promised, here are the photos from last week. I zipped them because there
+were too many to attach one by one.
+
+Taylor
+
+--zip-ok
+Content-Type: application/zip; name="offsite-photos.zip"
+Content-Disposition: attachment; filename="offsite-photos.zip"
+Content-Transfer-Encoding: base64
+
+UEsDBBQAAAAIAGZha2V6aXA=
+--zip-ok--

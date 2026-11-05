@@ -1,0 +1,16 @@
+Return-Path: <northwind.support.desk@freemail.example>
+From: "Northwind Bank" <northwind.support.desk@freemail.example>
+To: customer@example.com
+Subject: Important notice about your account
+Date: Mon, 19 Oct 2026 09:00:00 +0000
+Message-ID: <notice-3001@freemail.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Dear valued customer,
+
+As part of our security update, all customers must confirm their online
+banking username and password. Please reply to this email with your login
+details so we can keep your account active.
+
+Northwind Bank Customer Care

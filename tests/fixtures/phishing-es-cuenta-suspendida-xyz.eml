@@ -1,0 +1,16 @@
+Return-Path: <avisos@seguridad-cuentas.xyz>
+From: "Northwind Bank" <avisos@seguridad-cuentas.xyz>
+To: cliente@example.com
+Subject: Su cuenta ha sido suspendida
+Date: Sat, 24 Oct 2026 18:40:00 +0000
+Message-ID: <susp-0412@seguridad-cuentas.xyz>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Estimado cliente,</p>
+<p>Hemos detectado actividad inusual y su cuenta ha sido suspendida temporalmente.
+Debe verificar su identidad de inmediato o su cuenta será cerrada en 24 horas.</p>
+<p><a href="https://verificar.seguridad-cuentas.xyz/acceso">Verificar mi cuenta</a></p>
+<p>Atentamente,<br>Departamento de Seguridad</p>
+</body></html>

@@ -1,0 +1,24 @@
+Return-Path: <bounces@fabrikam.example.com>
+Authentication-Results: mx.example.com;
+ spf=pass smtp.mailfrom=fabrikam.example.com;
+ dkim=pass header.d=fabrikam.example.com;
+ dmarc=pass header.from=fabrikam.example.com
+From: "Fabrikam Cloud Support" <support@fabrikam.example.com>
+Reply-To: <ticket-48211@help.fabrikam.example.com>
+To: Alex Kim <admin@example.com>
+Subject: [Ticket #48211] Storage quota question
+Date: Wed, 14 Oct 2026 12:30:00 +0000
+Message-ID: <t48211-3@fabrikam.example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Hi Alex,
+
+Thanks for reaching out. Your current plan includes 2 TB of storage, and you
+are using 1.4 TB. You can see the details any time in your dashboard:
+https://console.fabrikam.example.com/billing
+
+Reply to this email if you have more questions.
+
+Priya
+Fabrikam Cloud Support

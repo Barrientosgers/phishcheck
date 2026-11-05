@@ -1,0 +1,20 @@
+Return-Path: <bounce-77@mail.fabrikam.example.com>
+Authentication-Results: mx.example.com;
+ spf=pass smtp.mailfrom=fabrikam.example.com;
+ dkim=pass header.d=fabrikam.example.com;
+ dmarc=pass header.from=fabrikam.example.com
+From: "Fabrikam Cloud" <news@fabrikam.example.com>
+To: Alex Kim <admin@example.com>
+Subject: What's new in Fabrikam Cloud this month
+Date: Sun, 18 Oct 2026 14:00:00 +0000
+Message-ID: <news-2026-10@fabrikam.example.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Hi Alex,</p>
+<p>This month we added faster backups and a new dashboard.</p>
+<p><a href="https://click.mailer-esp.example.net/ls/click?u=fabrikam-2026-10-a">fabrikam.example.com/whats-new</a></p>
+<p><a href="https://click.mailer-esp.example.net/ls/click?u=fabrikam-2026-10-b">Read the release notes</a></p>
+<p><a href="https://fabrikam.example.com/preferences">Email preferences</a></p>
+</body></html>

@@ -1,0 +1,19 @@
+Return-Path: <news@shop.example.org>
+Authentication-Results: mx.example.com;
+ spf=pass smtp.mailfrom=shop.example.org;
+ dkim=pass header.d=shop.example.org;
+ dmarc=pass header.from=shop.example.org
+From: "Example Outfitters" <news@shop.example.org>
+To: customer@example.com
+Subject: Last chance: 30% off ends tonight!
+Date: Tue, 13 Oct 2026 17:00:00 +0000
+Message-ID: <promo-2026-10@shop.example.org>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<h1>Hurry, sale ends at midnight!</h1>
+<p>Hi Sam, our autumn sale is almost over. Take 30% off jackets and boots before it's gone.</p>
+<p><a href="https://shop.example.org/sale">Shop the sale</a></p>
+<p><a href="https://shop.example.org/unsubscribe">Unsubscribe</a></p>
+</body></html>

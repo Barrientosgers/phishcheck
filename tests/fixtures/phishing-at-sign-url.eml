@@ -1,0 +1,15 @@
+Return-Path: <service@account-notice.test>
+From: "Northwind Bank" <service@account-notice.test>
+To: customer@example.com
+Subject: New sign-in to your account
+Date: Sun, 18 Oct 2026 03:14:00 +0000
+Message-ID: <signin-4410@account-notice.test>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Hello,</p>
+<p>We noticed a new sign-in to your Northwind Bank account from an unknown device.
+If this wasn't you, review the activity now.</p>
+<p><a href="https://northwind.example.com@login-review.test/activity">https://northwind.example.com/activity</a></p>
+</body></html>

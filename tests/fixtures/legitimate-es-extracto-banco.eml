@@ -1,0 +1,20 @@
+Return-Path: <extractos@northwind.example.com>
+Authentication-Results: mx.example.com;
+ spf=pass smtp.mailfrom=northwind.example.com;
+ dkim=pass header.d=northwind.example.com;
+ dmarc=pass header.from=northwind.example.com
+From: "Northwind Bank" <extractos@northwind.example.com>
+To: María López <cliente@example.com>
+Subject: Su extracto de octubre está disponible
+Date: Sat, 31 Oct 2026 08:00:00 +0000
+Message-ID: <extracto-oct@northwind.example.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Hola María,</p>
+<p>Su extracto de octubre ya está disponible en la banca online. Para verlo,
+inicie sesión como de costumbre desde nuestra web o aplicación.</p>
+<p><a href="https://www.northwind.example.com/extractos">www.northwind.example.com/extractos</a></p>
+<p>Recuerde: Northwind Bank nunca le pedirá su contraseña ni su PIN por correo.</p>
+</body></html>

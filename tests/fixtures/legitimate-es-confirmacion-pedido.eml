@@ -1,0 +1,20 @@
+Return-Path: <pedidos@tienda.example.org>
+Authentication-Results: mx.example.com;
+ spf=pass smtp.mailfrom=tienda.example.org;
+ dkim=pass header.d=tienda.example.org;
+ dmarc=pass header.from=tienda.example.org
+From: "Tienda Ejemplo" <pedidos@tienda.example.org>
+To: Lucía Martín <cliente@example.com>
+Subject: Confirmación de su pedido #10482
+Date: Mon, 19 Oct 2026 10:10:00 +0000
+Message-ID: <pedido-10482@tienda.example.org>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Hola Lucía,</p>
+<p>Gracias por su compra. Hemos recibido su pedido #10482 y le avisaremos cuando
+salga de nuestro almacén.</p>
+<p>Total: 42,90 EUR (pagado con tarjeta terminada en 4417)</p>
+<p><a href="https://tienda.example.org/pedidos/10482">Ver mi pedido</a></p>
+</body></html>

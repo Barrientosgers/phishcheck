@@ -1,0 +1,19 @@
+Return-Path: <security@fabrikam-cloud-support.test>
+Authentication-Results: mx.example.com;
+ spf=pass smtp.mailfrom=fabrikam-cloud-support.test;
+ dkim=pass header.d=fabrikam-cloud-support.test;
+ dmarc=pass header.from=fabrikam-cloud-support.test
+From: "Fabrikam Cloud" <security@fabrikam-cloud-support.test>
+To: admin@example.com
+Subject: Your storage will be deleted
+Date: Fri, 23 Oct 2026 06:30:00 +0000
+Message-ID: <del-5150@fabrikam-cloud-support.test>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Hello,</p>
+<p>Your Fabrikam Cloud subscription has expired. All files will be permanently
+deleted today unless you sign in and confirm your payment method.</p>
+<p><a href="https://login.fabrikam-cloud-support.test/renew">Sign in to Fabrikam Cloud</a></p>
+</body></html>

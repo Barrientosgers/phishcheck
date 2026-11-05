@@ -1,0 +1,15 @@
+Return-Path: <alerts@contoso-pay-alerts.test>
+From: "Contoso Pay" <alerts@contoso-pay-alerts.test>
+To: customer@example.com
+Subject: Payment declined - update your billing information
+Date: Sat, 17 Oct 2026 12:00:00 +0000
+Message-ID: <dec-1188@contoso-pay-alerts.test>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Hello,</p>
+<p>Your last payment was declined. Update your billing information to keep using
+Contoso Pay.</p>
+<p><a href="http://198.51.100.23/contoso/billing">Update billing information</a></p>
+</body></html>

@@ -1,0 +1,15 @@
+Return-Path: <reembolsos@agencia-tributaria-online.test>
+From: "Agencia Tributaria" <reembolsos@agencia-tributaria-online.test>
+To: contribuyente@example.com
+Subject: Tiene un reembolso pendiente de 384,50 EUR
+Date: Mon, 26 Oct 2026 08:15:00 +0000
+Message-ID: <reem-3845@agencia-tributaria-online.test>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Estimado contribuyente,</p>
+<p>Tras el último cálculo anual, tiene derecho a un reembolso de 384,50 EUR.
+Para recibirlo, complete el formulario con sus datos bancarios antes del viernes.</p>
+<p><a href="http://reembolsos.agencia-tributaria-online.test/formulario">Solicitar reembolso</a></p>
+</body></html>

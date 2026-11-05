@@ -1,0 +1,22 @@
+Return-Path: <scan@office-scanner.test>
+From: "Office Scanner" <scan@office-scanner.test>
+To: staff@example.com
+Subject: Scanned document from Fabrikam Cloud
+Date: Tue, 20 Oct 2026 14:45:00 +0000
+Message-ID: <scan-6620@office-scanner.test>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="scan-b"
+
+--scan-b
+Content-Type: text/plain; charset="utf-8"
+
+You have received a scanned document. Open the attached file and sign in
+with your email password to view it.
+
+--scan-b
+Content-Type: text/html; name="Scanned_Document.html"
+Content-Disposition: attachment; filename="Scanned_Document.html"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGJvZHk+ZmFrZTwvYm9keT48L2h0bWw+
+--scan-b--

@@ -1,0 +1,21 @@
+Return-Path: <citas@clinica.example.org>
+Authentication-Results: mx.example.com;
+ spf=pass smtp.mailfrom=clinica.example.org;
+ dkim=pass header.d=clinica.example.org;
+ dmarc=pass header.from=clinica.example.org
+From: "Clínica Ejemplo" <citas@clinica.example.org>
+To: Andrés Gómez <paciente@example.com>
+Subject: Recordatorio de su cita del jueves
+Date: Tue, 20 Oct 2026 09:30:00 +0000
+Message-ID: <cita-55102@clinica.example.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Hola Andrés,
+
+Le recordamos que tiene una cita el jueves 22 de octubre a las 10:30 con la
+Dra. Ruiz. Si necesita cambiarla, llámenos al número que aparece en nuestra
+web o responda a este correo.
+
+Un saludo,
+Clínica Ejemplo

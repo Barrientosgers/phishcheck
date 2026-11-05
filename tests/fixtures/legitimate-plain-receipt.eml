@@ -1,0 +1,20 @@
+Return-Path: <receipts@coffee.example.org>
+Authentication-Results: mx.example.com;
+ spf=pass smtp.mailfrom=coffee.example.org;
+ dkim=pass header.d=coffee.example.org;
+ dmarc=pass header.from=coffee.example.org
+From: "Example Coffee" <receipts@coffee.example.org>
+To: customer@example.com
+Subject: Your receipt
+Date: Wed, 21 Oct 2026 08:47:00 +0000
+Message-ID: <rcpt-99120@coffee.example.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Example Coffee - Main St.
+1 x Latte        4.50
+1 x Croissant    3.25
+Total            7.75 USD
+Paid by card ending 2290
+
+Thank you!

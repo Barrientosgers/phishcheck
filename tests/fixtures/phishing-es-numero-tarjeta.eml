@@ -1,0 +1,17 @@
+Return-Path: <atencion@contoso-soporte.test>
+From: "Contoso Pay" <atencion@contoso-soporte.test>
+To: cliente@example.com
+Subject: Actualice los datos de su tarjeta
+Date: Sun, 25 Oct 2026 10:55:00 +0000
+Message-ID: <tarj-7720@contoso-soporte.test>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Estimado usuario,
+
+No pudimos procesar su último pago. Para evitar el bloqueo de su cuenta,
+responda a este correo con el número de su tarjeta, la fecha de vencimiento
+y el código de seguridad (CVV).
+
+Gracias por su atención,
+Equipo de Contoso Pay

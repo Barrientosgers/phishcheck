@@ -1,0 +1,32 @@
+Return-Path: <billing@contoso.example.com>
+Authentication-Results: mx.example.com;
+ spf=pass smtp.mailfrom=contoso.example.com;
+ dkim=pass header.d=contoso.example.com;
+ dmarc=pass header.from=contoso.example.com
+From: "Contoso Pay" <billing@contoso.example.com>
+To: Jordan Lee <customer@example.com>
+Subject: Your October invoice
+Date: Thu, 15 Oct 2026 07:00:00 +0000
+Message-ID: <inv-oct-5521@contoso.example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="inv-ok"
+
+--inv-ok
+Content-Type: text/plain; charset="utf-8"
+
+Hi Jordan,
+
+Your invoice for October is attached. The amount of 14.99 USD will be charged
+automatically to your saved card on November 1. No action is needed.
+
+You can also view it online: https://contoso.example.com/invoices/5521
+
+Contoso Pay
+
+--inv-ok
+Content-Type: application/pdf; name="invoice-5521.pdf"
+Content-Disposition: attachment; filename="invoice-5521.pdf"
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQKZmFrZQ==
+--inv-ok--

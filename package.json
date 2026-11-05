@@ -12,7 +12,8 @@
     "format:check": "prettier --check .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "accuracy": "vitest run tests/accuracy.test.ts --silent=false"
   },
   "dependencies": {
     "postal-mime": "^4.2.0",

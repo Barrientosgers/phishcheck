@@ -1,0 +1,18 @@
+Return-Path: <support@wallet-recovery.top>
+From: "Wallet Support" <support@wallet-recovery.top>
+To: customer@example.com
+Subject: Immediate action: unauthorized withdrawal detected
+Date: Fri, 16 Oct 2026 22:11:00 +0000
+Message-ID: <wd-7781@wallet-recovery.top>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Dear user,</p>
+<p>An unauthorized withdrawal of 0.84 BTC was detected on your wallet. To stop it,
+verify ownership immediately by sending a 0.05 BTC security deposit to the
+bitcoin address below, or by entering your recovery phrase on our secure page.</p>
+<p>Address: bc1qexampleexampleexampleexample0000</p>
+<p><a href="https://verify.wallet-recovery.top/restore">Restore my wallet</a></p>
+<p>You have 12 hours before your funds are lost.</p>
+</body></html>

@@ -1,0 +1,27 @@
+Return-Path: <billing@invoices-portal.test>
+From: "Billing Department" <billing@invoices-portal.test>
+To: ap@example.com
+Subject: Overdue invoice #88412
+Date: Wed, 21 Oct 2026 11:25:00 +0000
+Message-ID: <inv-88412@invoices-portal.test>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="mac-b"
+
+--mac-b
+Content-Type: text/plain; charset="utf-8"
+
+Hello,
+
+Your invoice #88412 is overdue. Please review the attached document and
+click "Enable Content" to view the payment details.
+
+Thank you,
+Billing Department
+
+--mac-b
+Content-Type: application/vnd.ms-word.document.macroEnabled.12; name="invoice_88412.docm"
+Content-Disposition: attachment; filename="invoice_88412.docm"
+Content-Transfer-Encoding: base64
+
+UEsDBBQAAAAIAGZha2Vkb2Nt
+--mac-b--

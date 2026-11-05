@@ -1,0 +1,18 @@
+Return-Path: <notify@parcel-update.test>
+From: "Parcel Delivery" <notify@parcel-update.test>
+To: customer@example.com
+Subject: Your package is on hold - action required
+Date: Tue, 13 Oct 2026 10:05:00 +0000
+Message-ID: <hold-5521@parcel-update.test>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Dear customer,
+
+We attempted to deliver your package today but could not complete delivery
+because of an unpaid shipping fee of 1.99 USD.
+
+Pay the fee within 48 hours or your package will be returned to the sender:
+http://short.test/pkg71
+
+Delivery Services

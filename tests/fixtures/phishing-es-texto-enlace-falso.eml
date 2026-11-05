@@ -1,0 +1,15 @@
+Return-Path: <notificaciones@aviso-banca.test>
+From: "Northwind Bank" <notificaciones@aviso-banca.test>
+To: cliente@example.com
+Subject: Confirme una transferencia reciente
+Date: Tue, 27 Oct 2026 15:30:00 +0000
+Message-ID: <trf-9081@aviso-banca.test>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Hola,</p>
+<p>Se ha programado una transferencia de 950,00 EUR desde su cuenta. Si usted no
+la reconoce, cancélela aquí:</p>
+<p><a href="https://cancelar-operacion.aviso-banca.test/t/9081">https://www.northwind.example.com/transferencias</a></p>
+</body></html>

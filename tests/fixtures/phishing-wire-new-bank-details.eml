@@ -1,0 +1,24 @@
+Return-Path: <accounts@fabrikam-billing.test>
+From: "Fabrikam Cloud Billing" <accounts@fabrikam-billing.test>
+Reply-To: <finance.team@freemail.example>
+To: ap@example.com
+Subject: Updated bank details for invoice INV-30417
+Date: Thu, 15 Oct 2026 08:30:00 +0000
+Message-ID: <inv-30417@fabrikam-billing.test>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Hello,
+
+Please note that our bank account has changed due to an audit. Kindly send
+the wire transfer for invoice INV-30417 (12,480.00 USD) to the new account
+below today to avoid a late fee:
+
+Bank: First Example Bank
+Account: 000123456789
+SWIFT: EXAMPLEXX
+
+Reply to this email to confirm once the transfer is done.
+
+Accounts Receivable
+Fabrikam Cloud

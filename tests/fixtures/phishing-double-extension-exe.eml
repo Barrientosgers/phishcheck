@@ -1,0 +1,27 @@
+Return-Path: <facturacion@proveedor-pagos.test>
+From: "Facturación" <facturacion@proveedor-pagos.test>
+To: cliente@example.com
+Subject: Factura electrónica disponible
+Date: Thu, 22 Oct 2026 13:10:00 +0000
+Message-ID: <fe-2290@proveedor-pagos.test>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="ex-b"
+
+--ex-b
+Content-Type: text/plain; charset="utf-8"
+
+Estimado cliente,
+
+Le enviamos su factura electrónica del mes de octubre. Abra el archivo
+adjunto para revisarla.
+
+Saludos cordiales,
+Departamento de Facturación
+
+--ex-b
+Content-Type: application/octet-stream; name="factura_octubre.pdf.exe"
+Content-Disposition: attachment; filename="factura_octubre.pdf.exe"
+Content-Transfer-Encoding: base64
+
+TVqQAAMAAAAEAAAAZmFrZQ==
+--ex-b--
