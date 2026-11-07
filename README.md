@@ -9,9 +9,20 @@ Paste a raw email and PhishCheck gives you a risk score from 0 to 100, a verdict
 
 **[Try the live demo →](https://barrientosgers.github.io/phishcheck/)**
 
-<!-- Demo GIF: record one, save it as docs/demo.gif, then uncomment the line below.
-![PhishCheck analyzing a sample phishing email](docs/demo.gif)
--->
+<table>
+  <tr>
+    <td valign="top"><a href="docs/phishing.png"><img src="docs/phishing.png" alt="A phishing email scored 100 out of 100, with 13 red flags explained"></a></td>
+    <td valign="top"><a href="docs/safe.png"><img src="docs/safe.png" alt="A legitimate bank statement scored 0 out of 100, likely safe, with SPF, DKIM and DMARC passing"></a></td>
+    <td valign="top"><a href="docs/spanish.png"><img src="docs/spanish.png" alt="A Spanish phishing invoice scored 60 out of 100, with Spanish phrases detected"></a></td>
+  </tr>
+  <tr>
+    <td align="center">Phishing: 100/100</td>
+    <td align="center">Legitimate: 0/100</td>
+    <td align="center">Spanish email: 60/100</td>
+  </tr>
+</table>
+
+<sub>Click a screenshot to see it full size.</sub>
 
 ## Why explainable?
 
